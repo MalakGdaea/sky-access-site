@@ -146,10 +146,30 @@ body {
         /* Use a relative path to your image */
         background-image: url('/images/quote-bg.jpg');
 
-        @apply relative h-screen w-full bg-cover bg-center bg-no-repeat;
+        @apply relative h-screen w-full bg-cover bg-center bg-no-repeat text-white;
 
         /* This ensures the content sits on top of the background */
         @apply flex items-center justify-center;
+
+        .form-container {
+            @apply backdrop-blur-xl backdrop-saturate-150 flex space-y-4 p-6 bg-white/25 rounded-xl border border-neutral-200 shadow-md w-2/3 2xl:w-1/2 gap-10 2xl:gap-2;
+        }
+
+        h1 {
+            @apply text-lg font-semibold mb-10;
+        }
+
+        form {
+            @apply w-full flex flex-col space-y-6;
+        }
+
+        input {
+            @apply w-full p-2 bg-white text-black rounded-md border border-gray-300 focus:border-skyrise-blue focus:ring-1  outline-none transition;
+        }
+
+        button {
+            @apply mt-6 py-1 px-6 rounded-sm  border border-[#77f2c1] text-white font-bold text-lg hover:bg-black/20 transition-all;
+        }
     }
 
 }
