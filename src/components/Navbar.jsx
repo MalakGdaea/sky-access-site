@@ -46,7 +46,9 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
-                <button>Request a Quote</button>
+                <a href="#quote" className="btn">
+                    Request a Quote
+                </a>
             </div>
         </nav>
     );

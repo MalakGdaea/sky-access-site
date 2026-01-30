@@ -11,7 +11,7 @@ const ScheduleForm = () => {
                 <input
                     id="startDate"
                     type="date"
-                    className="w-full p-3 rounded-md bg-white text-black outline-none focus:ring-2 focus:ring-[#77f2c1]"
+                    className="w-full p-3 rounded-md bg-white text-black outline-none focus:ring-2 focus:skyrise-blue"
                 />
             </div>
 
@@ -22,7 +22,7 @@ const ScheduleForm = () => {
                     {['One-Time', 'Quarterly', 'Semi-Annual'].map((plan) => (
                         <label key={plan} className="cursor-pointer">
                             <input type="radio" name="frequency" value={plan} className="peer hidden" />
-                            <div className="p-3 text-center border border-white/20 rounded-lg bg-white/5 text-sm text-white transition-all peer-checked:border-[#77f2c1] peer-checked:bg-[#77f2c1]/10 peer-checked:text-[#77f2c1]">
+                            <div className="plan">
                                 {plan}
                             </div>
                         </label>

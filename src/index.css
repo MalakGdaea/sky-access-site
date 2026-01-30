@@ -62,7 +62,7 @@ body {
             @apply flex-center lg:gap-12 gap-7;
         }
 
-        button {
+        .btn {
             @apply border-1 border-solid border-text-main rounded-4xl px-4 py-2 hover:bg-text-main hover:text-white;
         }
     }
@@ -152,7 +152,7 @@ body {
         @apply flex items-center justify-center;
 
         .form-container {
-            @apply backdrop-blur-xl backdrop-saturate-150 flex space-y-4 p-6 bg-white/25 rounded-xl border border-neutral-200 shadow-md w-2/3 2xl:w-1/2 gap-10 2xl:gap-2;
+            @apply backdrop-blur-xl backdrop-saturate-150 flex flex-col md:flex-row space-y-4 p-6 bg-white/25 rounded-xl border border-neutral-200 shadow-md w-full md:w-2/3 2xl:w-1/2 gap-10 2xl:gap-2;
         }
 
         h1 {
@@ -168,8 +168,17 @@ body {
         }
 
         button {
-            @apply mt-6 py-1 px-6 rounded-sm  border border-[#77f2c1] text-white font-bold text-lg hover:bg-black/20 transition-all;
+            @apply mt-6 py-1 px-6 rounded-sm  border border-skyrise-blue text-white font-bold text-lg hover:bg-black/20 transition-all;
         }
+
+        .plan {
+            @apply p-3 text-center border border-white/20 rounded-lg bg-white/5 text-sm text-white transition-all peer-checked:border-skyrise-blue peer-checked:bg-skyrise-blue/10 peer-checked:text-skyrise-blue;
+        }
+
+        .active {
+            @apply border border-skyrise-blue p-1 px-2 rounded-lg text-sm transition-all;
+        }
+
     }
 
 }
