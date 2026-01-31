@@ -2,8 +2,11 @@ import React from 'react';
 import {useGSAP} from "@gsap/react";
 import gsap from "gsap";
 import {SplitText} from "gsap/all";
+import { useMediaQuery} from "react-responsive";
 
 const Hero = () => {
+
+    const isMobile = useMediaQuery({query: "(max-width: 767px)" });
 
     useGSAP(() => {
         const heroSplit = new SplitText(".title", {type: 'words'});
@@ -18,13 +21,13 @@ const Hero = () => {
         const timeline = gsap.timeline({
             scrollTrigger: {
                 trigger: '#hero img',
-                start: 'top -25%',
-                end: 'bottom top',
+                start: isMobile ? 'top top' : 'top -25%',
+                end: isMobile ? '60% top' : '75% top',
                 scrub: true,
             }
         }).to(
             "#hero img",
-            {scale: 2.6, ease: "power1.inOut", opacity: 0},
+            {scale:  2.6, ease: "power1.inOut", opacity: 0},
         ).from("#hero p", {
             opacity: 0,
             scale: 0.8,
@@ -36,11 +39,18 @@ const Hero = () => {
     return (
         <section id="hero">
             <div className="relative min-h-screen w-full">
-                <img
-                    src="/images/hero.jpg"
-                    alt="Clean reflection of the city skyline on a modern glass office building"/>
+                <picture>
+                    <source
+                        media="(max-width: 767px)"
+                        srcSet="/images/hero-sm.jpg"
+                    />
+                    <img
+                        src="/images/hero.jpg"
+                        alt="Clean reflection of the city skyline on a modern glass office building"
+                    />
+                </picture>
                 <div className="abs-left">
-                    <h1 className="title">High-Rise Window Cleaning.<br/>Done Safely.</h1>
+                    <h1>High-Rise Window Cleaning.<br/>Done Safely.</h1>
                 </div>
                 <div className="flex items-center justify-center h-full">
                     <p>Certified rope-access technicians providing
