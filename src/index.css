@@ -143,16 +143,15 @@ body {
     }
 
     #quote {
-        /* Use a relative path to your image */
         background-image: url('/images/quote-bg.jpg');
-
         @apply relative h-screen w-full bg-cover bg-center bg-no-repeat text-white;
 
         /* This ensures the content sits on top of the background */
-        @apply flex items-center justify-center;
+        @apply flex items-center justify-center p-6 md:p-0;
 
         .form-container {
-            @apply backdrop-blur-xl backdrop-saturate-150 flex flex-col md:flex-row space-y-4 p-6 bg-white/25 rounded-xl border border-neutral-200 shadow-md w-full md:w-2/3 2xl:w-1/2 gap-10 2xl:gap-2;
+            @apply backdrop-blur-xl backdrop-saturate-150 flex flex-col md:flex-row space-y-0 md:space-y-4 p-6;
+            @apply  bg-white/25 rounded-xl border border-neutral-200 shadow-md w-full md:w-2/3 2xl:w-1/2 gap-5 md:gap-10 2xl:gap-2;
         }
 
         h1 {

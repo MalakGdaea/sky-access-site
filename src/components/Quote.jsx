@@ -14,15 +14,15 @@ const Quote = () => {
         <section id="quote">
             <div className="form-container">
                 <div className="w-3/4">
-                    <h1 className="text-3xl font-bold 2xl:text-4xl">Let's Scale Your <br/>Maintenance</h1>
-                    <address className="text-lg">
+                    <h1 className="text-xl md:text-3xl font-bold 2xl:text-4xl mb-2 md:mb-10">Let's Scale Your <br/>Maintenance</h1>
+                    <address className="text-sm md:text-lg">
                         <span>Direct Line: +1 (555) 123-667</span><br/>
                         <span>Email: info@skyLine.com</span>
                     </address>
                 </div>
                 <div className="w-full">
                     {step <= 3 && (
-                        <div className="flex justify-between mb-7">
+                        <div className="flex justify-between mb-4 md:mb-7">
                             <span className={step === 1 ? "active" : ""}>1.Contact</span>
                             <span className={step === 2 ? "active" : ""}>2.Building</span>
                             <span className={step === 3 ? "active" : ""}>3.Schedule</span>
