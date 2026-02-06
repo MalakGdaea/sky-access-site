@@ -20,17 +20,17 @@ const NavLinks = [
 const services = [
     {
         name: "Commercial Window Cleaning",
-        description: "High-rise window cleaning for office buildings, skyscrapers, and retail centers—delivering spotless glass that enhances your business’s image.",
+        description: "Professional cleaning for office buildings, skyscrapers, and retail centers, enhancing your business's image.",
         image: "/images/srv-1.jpg"
     },
     {
-      name: "Residential Window Cleaning",
-      description: "Expert cleaning for high-rise apartments and condominiums, including balconies and sliding doors, for brighter views and cleaner living spaces.",
-      image: "/images/srv-2.jpg"
+        name: "Residential Window Cleaning",
+        description: "Expert cleaning for high-rise apartments, condominiums, balconies, and sliding doors.",
+        image: "/images/srv-2.jpg"
     },
     {
         name: "Specialty Glass Services",
-        description: "Specialized solutions for complex glass surfaces such as facades, curtain walls, skylights, and post-construction cleanups.",
+        description: "Specialized solutions for facades, curtain walls, skylights, and post-construction cleanups.",
         image: "/images/srv-3.jpg"
     },
     {
@@ -64,15 +64,15 @@ const process = [
 ]
 
 const steps = [
-    { type: "icon", src: "/images/inspect.svg", alt: "Inspect" },
-    { type: "arrow",direction: "up", src: "/images/up-arrow.svg" , alt: "Up arrow" },
-    { type: "icon", src: "/images/plan.svg", alt: "Plan" },
-    { type: "arrow",  direction: "down", src: "/images/down-arrow.svg" , alt: "Down-arrow" },
-    { type: "icon", src: "/images/secure.svg", alt: "Secure" },
-    { type: "arrow", direction: "up", src: "/images/up-arrow.svg" , alt: "Up-arrow" },
-    { type: "icon", src: "/images/clean.svg" , alt: "Clean" },
-    { type: "arrow", direction: "down", src: "/images/down-arrow.svg" , alt: "Down-arrow" },
-    { type: "icon", src: "/images/maintain.svg" , alt: "Maintain" },
+    {type: "icon", src: "/images/inspect.svg", alt: "Inspect"},
+    {type: "arrow", direction: "up", src: "/images/up-arrow.svg", alt: "Up arrow"},
+    {type: "icon", src: "/images/plan.svg", alt: "Plan"},
+    {type: "arrow", direction: "down", src: "/images/down-arrow.svg", alt: "Down-arrow"},
+    {type: "icon", src: "/images/secure.svg", alt: "Secure"},
+    {type: "arrow", direction: "up", src: "/images/up-arrow.svg", alt: "Up-arrow"},
+    {type: "icon", src: "/images/clean.svg", alt: "Clean"},
+    {type: "arrow", direction: "down", src: "/images/down-arrow.svg", alt: "Down-arrow"},
+    {type: "icon", src: "/images/maintain.svg", alt: "Maintain"},
 ];
 
-export { NavLinks , services, process, steps };
+export {NavLinks, services, process, steps};

@@ -78,15 +78,27 @@ body {
     }
 
     #services {
-        .s-card {
-            @apply rounded-2xl border border-neutral-200 bg-white p-6 transition hover:-translate-y-1 hover:shadow-md;
-        }
         .container {
-            @apply  p-6 h-[250vh] lg:mx-auto;
+            @apply  h-[340vh] 2xl:h-[250vh] lg:mx-auto;
         }
 
-        h1 {
-            @apply mb-16 text-4xl sticky top-20 font-display;
+        .s-card {
+            @apply flex flex-col rounded-md border border-neutral-200 border-b-10
+            hover:border-b-text-main bg-white transition
+            hover:-translate-y-1 hover:shadow-md
+            min-h-62.5 md:w-[23%] mb-7 md:mb-0 md:ml-4 ;
+
+            img {
+                @apply rounded-t-md h-48 w-full object-cover;
+            }
+        }
+
+        header {
+            @apply flex flex-col items-center sticky top-20;
+        }
+
+        h2 {
+            @apply mb-2 text-4xl font-display text-center font-bold;
         }
 
         h3 {
@@ -94,7 +106,7 @@ body {
         }
 
         p {
-            @apply text-sm text-neutral-600 leading-relaxed;
+            @apply text-base text-neutral-800 leading-relaxed ;
         }
     }
 
