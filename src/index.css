@@ -83,7 +83,7 @@ body {
         }
 
         .s-card {
-            @apply flex flex-col rounded-md border border-neutral-200 border-b-10
+            @apply flex flex-col rounded-md border border-neutral-200 border-b-8
             hover:border-b-text-main bg-white transition
             hover:-translate-y-1 hover:shadow-md
             min-h-62.5 md:w-[23%] mb-7 md:mb-0 md:ml-4 ;
@@ -111,7 +111,7 @@ body {
     }
 
     #process {
-        @apply bg-text-main text-glass-clean h-[300vh] py-6 lg:px-8 w-full;
+        @apply bg-slate-900 text-glass-clean h-[300vh] py-6 lg:px-8 w-full;
 
         .container {
             @apply grid gap-4 md:grid-cols-[1fr_2fr] md:gap-6 h-screen;

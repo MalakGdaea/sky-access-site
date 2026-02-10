@@ -17,6 +17,7 @@ const NavLinks = [
     }
 ];
 
+
 const services = [
     {
         name: "Commercial Window Cleaning",
@@ -75,4 +76,6 @@ const steps = [
     {type: "icon", src: "/images/maintain.svg", alt: "Maintain"},
 ];
 
-export {NavLinks, services, process, steps};
+const cities = ["Singapore", "Hong Kong", "Dubai", "New York"];
+
+export {NavLinks, services, process, steps, cities};
