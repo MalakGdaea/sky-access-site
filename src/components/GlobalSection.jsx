@@ -5,7 +5,7 @@ import { cities } from "../../constants/index.js";
 const GlobalSection = () => {
 
     return (
-        <footer className="bg-slate-900 text-white pt-16 pb-8 px-6 border-t border-slate-800">
+        <footer id="contacts" className="bg-slate-900 text-white pt-16 pb-8 px-6 border-t border-slate-800">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 
                 {/* Column 1: Brand & Bio */}

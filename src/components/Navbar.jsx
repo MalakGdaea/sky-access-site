@@ -37,7 +37,7 @@ const Navbar = () => {
     return (
         <nav>
             <div>
-                <a href='#home' className="flex items-center gap-2">
+                <a href='#hero' className="flex items-center gap-2">
                     <h2 className="text-md font-bold tracking-tighter text-sky-400">
                         SKYLINE<span className="text-background">ACCESS</span>
                     </h2>

@@ -40,7 +40,7 @@ const Services = () => {
                                     : undefined
                             }}
                         >
-                            <img src={service.image} alt=""/>
+                        <img src={service.image} alt={service.name} />
                             <div className="p-5 min-h-55 2xl:min-h-45">
                                 <h3>
                                     {service.name}

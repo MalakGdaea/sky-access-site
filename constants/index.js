@@ -8,10 +8,6 @@ const NavLinks = [
         title: "Process",
     },
     {
-        id: "projects",
-        title: "Projects",
-    },
-    {
         id: "contacts",
         title: "Contacts",
     }
