@@ -3,6 +3,7 @@ import { useGSAP} from "@gsap/react";
 import gsap from "gsap";
 
 import ScrollTrigger from "gsap/ScrollTrigger";
+import React from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const Navbar = () => {
@@ -37,7 +38,9 @@ const Navbar = () => {
         <nav>
             <div>
                 <a href='#home' className="flex items-center gap-2">
-                    <p>SkyLine Access</p>
+                    <h2 className="text-md font-bold tracking-tighter text-sky-400">
+                        SKYLINE<span className="text-background">ACCESS</span>
+                    </h2>
                 </a>
                 <ul>
                     {NavLinks.map((link) => (

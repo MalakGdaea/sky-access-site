@@ -40,10 +40,10 @@ const GlobalSection = () => {
                 <div>
                     <h3 className="text-lg font-semibold mb-6">Services</h3>
                     <ul className="space-y-3 text-slate-400">
-                        <li className="hover:text-white transition-colors cursor-pointer text-sm">Residential Cleaning</li>
-                        <li className="hover:text-white transition-colors cursor-pointer text-sm">Commercial High-Rise</li>
-                        <li className="hover:text-white transition-colors cursor-pointer text-sm">Glass Restoration</li>
-                        <li className="hover:text-white transition-colors cursor-pointer text-sm">Safety Consulting</li>
+                        <li>Residential Cleaning</li>
+                        <li>Commercial High-Rise</li>
+                        <li>Glass Restoration</li>
+                        <li>Safety Consulting</li>
                     </ul>
                 </div>
 
@@ -59,7 +59,7 @@ const GlobalSection = () => {
                             <Mail className="w-4 h-4 text-sky-500" />
                             <span className="text-slate-400">contact@skyaccess.co.il</span>
                         </div>
-                        <a href="#quote" className="inline-flex items-center w-full justify-center px-6 py-2 bg-sky-600 text-white no-underline rounded shadow-md transition-all">
+                        <a href="#quote">
                             Request Service
                         </a>
                     </div>

@@ -1,16 +1,48 @@
-# React + Vite
+# SkyAccess
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SkyAccess is a responsive, scroll-animated landing page for a high-rise window cleaning service. It uses GSAP for motion, Tailwind CSS for styling, and a multi-step quote form to capture leads.
 
-Currently, two official plugins are available:
+## View Live Site
+- https://sky-access-site.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![SkyAccess preview](public/site.png)
 
-## React Compiler
+## Features
+- Hero split-text reveal and scroll-driven image zoom
+- Sticky, horizontal service cards with animated section divider
+- Pinned process timeline with step animations
+- Multi-step quote form with a confirmation state
+- Global footer with locations and contact details
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+- React + Vite
+- Tailwind CSS
+- GSAP + ScrollTrigger
 
-## Expanding the ESLint configuration
+## Getting Started
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the dev server:
+   ```bash
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Scripts
+- `npm run dev` - Start the Vite dev server
+- `npm run build` - Build for production
+- `npm run preview` - Preview the production build
+- `npm run lint` - Run ESLint
+
+## Project Structure
+- `src/App.jsx` - App composition
+- `src/components/` - Page sections and forms
+- `src/index.css` - Global styles and Tailwind layers
+- `constants/index.js` - Navigation, services, and process data
+- `public/images/` - Hero and service imagery
+
+## Customization
+- Update copy and services in `constants/index.js`
+- Swap images in `public/images/`
+- Adjust animation timings in `src/components/`

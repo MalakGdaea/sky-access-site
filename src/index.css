@@ -10,6 +10,7 @@
     --color-deep-sky: #1e3a8a;
     --color-glass-clean: #f8fafc;
     --color-text-main: #0f172a;
+    --color-background: #0f172a;
 }
 
 html,
@@ -188,6 +189,16 @@ body {
 
         .active {
             @apply border border-skyrise-blue p-1 px-2 rounded-lg text-sm transition-all;
+        }
+    }
+
+    footer {
+        li {
+            @apply hover:text-white transition-colors cursor-pointer text-sm;
+        }
+
+        a {
+            @apply inline-flex items-center w-full justify-center px-6 py-2 bg-sky-600 text-white no-underline rounded shadow-md transition-all;
         }
     }
 }
